@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, gordi!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+    />
+  </head>
+
+  <body>
+    <div id="custom-cursor">
+      <img src="images/airplane-cursor.png" alt="Custom Cursor" />
+    </div>
+    <section id="landing">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="picture-container">
+          <img src="images/juan.png" alt="Your Picture" />
+        </div>
+        <h1>Felices 25, gordi!!!</h1>
+        <p>Prepárate...</p>
+        <button id="start-button">Descubre tu regalo;)</button>
+      </div>
+    </section>
+
+    <section id="packing">
+      <h2>Primero tienes que hacer la maleta!</h2>
+      <div class="suitcase-area">
+        <div class="suitcase">
+          <img src="images/luggage.png" alt="Suitcase" class="suitcase-img" />
+          <div class="items"></div>
+        </div>
+        <div class="packing-items"></div>
+      </div>
+      <p id="packing-message"></p>
+    </section>
+
+    <section id="airport">
+      <h2>At the Airport</h2>
+      <div class="departure-board">
+        <div class="board-content">
+          <div class="board-line">
+            <span class="destination">XXX</span>
+            <span class="time"></span>
+            <span class="status"></span>
+          </div>
+          <div class="board-line">
+            <span class="destination">XXX</span>
+            <span class="time"></span>
+            <span class="status"></span>
+          </div>
+          <div class="board-line">
+            <span class="destination">XXX</span>
+            <span class="time"></span>
+            <span class="status"></span>
+          </div>
+        </div>
+      </div>
+      <button id="check-flight">Checkea el flight status en pantalla</button>
+      <p id="airport-message"></p>
+    </section>
+
+    <section id="inflight">
+      <div class="window">
+        <img src="images/airplane-window.jpeg" alt="Airplane Window View" />
+      </div>
+      <div class="video-container">
+        <video id="video-player" width="480" height="270" controls>
+          <source src="" type="video/mp4" id="mp4Source" />
+          <source src="" type="video/webm" id="webmSource" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <button id="play-videos">Play</button>
+      <button id="read-letter-button">
+        <img src="images/sobre.png" alt="Read Letter" />
+      </button>
+      <div id="letter-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            Gordi,<br /><br />
+            Feliz cumple! Espero que hayas disfrutado mucho hoy, y que poco a
+            poco te vaya gustando más que sea tu cumple (de eso me encargo yo
+            año a año).
+            <br /><br />
+            Quería hacerte algo distinto, porque quiero seguir sorprendiéndote
+            de vez en cuando. Y me hacía ilusión sacar mi lado nerd!
+            <br /><br />
+            Te quiero mucho cielo, sigo sin creerme la suerte que tengo de poder
+            pasar mi vida contigo. De la paciencia que tienes, y lo mucho que me
+            cuidas y te esfuerzas por hacerme feliz. Por sentarme a hablar las
+            cosas aunque mi tozudez intente evitar las conversaciones difíciles,
+            y por aguantarme cuando me pongo tonta. Gracias por enseñarme a
+            cuidar más la relación, porque aunque parezca mentira (siendo yo la
+            que venía de una relación larga), tú me has enseñado mucho de ser
+            mejor pareja. Me encanta nuestra comunicación, el hecho de que
+            podamos hablar de todo y de que no me de miedo compartir cualquier
+            cosa contigo, porque sé que me vas a escuchar y probablemente me des
+            un buen consejo al respecto.
+            <br /><br />
+            Gracias por darle a las cosas la importancia que tienen, y por
+            ayudarme a ver que hay discusiones que no merecen la pena. Por
+            enseñarme tu lado mas cariñoso, y hacerme sentir la persona mas
+            afortunada del mundo por poder tenerte todos los días de mi vida.
+            Porque que te quede claro, somos un equipo que va a poder con todo.
+            Y no solo nos quedan muchos años de vivir juntos, sino que vamos a
+            poder viajar a tantos sitios, jugar tantas partidas de mus, vernos
+            tantas series y pelearnos tanto por el lavavajillas...
+            <br /><br />
+            Y me hace mucha ilusión! Saber que solo va a ir a más, y que poco a
+            poco vamos construyendo un futuro en el que vamos a crecer juntos me
+            hace feliz. <br /><br />
+            Y para celebrar que hace 25 años nació mi compañero de vida...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reveal">
+      <div id="destination-reveal">
+        <div class="destination-images">
+          <img src="images/corfu-airpline.jpeg" alt="Corfu" />
+          <img src="images/albania-ferry.png" alt="Albania" />
+        </div>
+        <h2>Nos vamos a Corfu & Albania!</h2>
+        <p>
+          Por esos 25 años vamos a pasar unas vacaciones muy guays en la
+          playita!! Vale por:
+          <br /><br />
+          vuelos London - Corfu y Corfu - London +
+          <br /><br />hotel en Corfu + <br /><br />hotel 5 estrellas en Albania
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

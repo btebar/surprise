@@ -1,0 +1,469 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  background-color: #f8f8f8; /* Light gray background */
+  cursor: none;
+}
+
+section {
+  padding: 60px 20px; /* Increased padding */
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+  font-size: 3em; /* Larger headline */
+  margin-bottom: 20px;
+  color: #4a4e69; /* Darker text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+h2 {
+  font-size: 2.2em; /* Larger subheading */
+  margin-bottom: 30px;
+  color: #22223b; /* Darker subheading color */
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  color: #5c6377; /* Slightly lighter paragraph color */
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+  padding: 12px 25px; /* Larger button */
+  font-size: 1.1em;
+  background-color: #f2cc8f; /* Warmer button color */
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  color: #22223b; /* Button text color */
+}
+
+button:hover {
+  background-color: #e07a5f; /* Slightly darker on hover */
+  transform: scale(1.05); /* Slight scale up on hover */
+}
+
+/* Landing Section */
+#landing {
+  
+    color: #fff;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay */
+}
+
+#landing .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em; /* Larger heading */
+    margin-bottom: 20px;
+    color: #fff; /* White heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+#landing p {
+    font-size: 1.3em;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#landing .picture-container {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed (or use 'auto') */
+    border-radius: 50%; /* Make it a circle (optional) */
+    overflow: hidden; /* Clip the image to the container */
+    margin-bottom: 20px; /* Spacing below the picture */
+}
+
+#landing .picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container */
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 28px; /* Larger button */
+    font-size: 1.2em;
+    background-color: #66b3ba; /* Turquoise button */
+    border: none;
+    border-radius: 10px; /* More rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: #fff; /* White text */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #45a0a4; /* Darker turquoise on hover */
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Packing Section */
+#packing {
+  background-color: #f9f5f6;
+}
+
+#packing .suitcase-area {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  align-items: center;
+  margin-bottom: 40px; /* Increased spacing */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 20px; /* Spacing between suitcase and items */
+}
+
+#packing .suitcase {
+  position: relative;
+}
+
+#packing .suitcase-img {
+  width: 250px; /* Larger suitcase */
+  height: auto;
+}
+
+#packing .items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    gap: 5px; /* Add some spacing between items */
+}
+
+#packing .packing-items {
+  display: flex;
+  justify-content: center; /* Center the items */
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.packing-item {
+  cursor: pointer;
+  width: 60px; /* Consistent item size */
+  height: 60px;
+  object-fit: contain; /* Ensure images fit within the container */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.packed-item {
+    max-width: 70px; 
+    max-height: 70px; 
+}
+
+.packing-item:hover {
+  transform: scale(1.1); /* Slight scale up on hover */
+}
+
+/* Airport Section */
+#airport {
+  background-color: #e9ecef;
+  position: relative;
+}
+
+#airport .departure-board {
+  background-color: #386fa4; /* More vibrant color */
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px; /* More rounded corners */
+  margin-bottom: 40px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15); /* Box shadow for depth */
+}
+
+#airport .board-content {
+  /* Style for board content */
+}
+
+#airport .board-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+#airport .board-line:last-child {
+  border-bottom: none;
+}
+
+#airport .board-line span {
+  font-size: 1.1em; /* Larger font size for board text */
+}
+
+#airport button {
+    margin-bottom: 20px;
+}
+
+/* In-Flight Section */
+#inflight {
+  background-color: #ffffff;
+}
+
+#inflight .window {
+  align-self: center;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker modal background */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Reveal Section */
+#reveal {
+  background-color: #f9f5f6;
+}
+
+#reveal .destination-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allow images to wrap */
+}
+
+#reveal .destination-images img {
+  width: 350px; /* Larger images */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+#reveal .destination-images img:hover {
+  transform: scale(1.03); /* Slight scale up on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  #packing .suitcase-area {
+    flex-direction: column;
+    align-items: center; /* Center items */
+  }
+
+  #reveal .destination-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #reveal .destination-images img {
+    width: 90%;
+  }
+}
+
+#letter-modal .modal-content p {
+    font-family: 'Indie Flower', cursive; /* Or your chosen font */
+    font-size: 1.3em; /* Adjust size as needed */
+    line-height: 1.8; /* Improve readability */
+    transform-origin: top center;
+    animation: unfoldLetter 1s forwards;
+}
+
+@keyframes unfoldLetter {
+    0% {
+        transform: scaleY(0);
+        opacity: 0; /* Start invisible */
+    }
+    70% {
+        transform: scaleY(1.05); /* Overshoot a bit for a nice effect */
+        opacity: 1; /* Fade in */
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.packing-item.packed {
+    opacity: 0.5; /* Reduce opacity for packed items */
+    cursor: default; /* Change cursor style */
+}
+
+/* Create a custom cursor element */
+#custom-cursor {
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    pointer-events: none; /* Important: Allows clicks to pass through */
+    z-index: 9999; /* Ensure it's on top */
+}
+
+#custom-cursor img {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+}
+
+#animated-plane.animated-plane {
+    position: absolute; 
+     top: 90%;
+    left: -100px;
+    width: 80px;
+    height: auto;
+    z-index: 1000;
+    animation: flyAcross 3s forwards;
+    opacity: 0;
+}
+
+@keyframes flyAcross {
+    0% {
+        left: -100px;
+         top: 80%;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        top: 0%;
+        left: 110%; /* End off-screen */
+        opacity: 0;
+    }
+}
+
+.dates {
+    margin-left: 10px;
+    margin-right: 10px; /* Add spacing between destination and dates */
+    font-size: 0.9em; /* Adjust font size as needed */
+    color: #bdbcbc; /* Adjust color as needed */
+}
+
+
+.family-video-message {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-caption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+#play-videos {
+    /* ... styles for the Play Videos button ... */
+    margin-top: 20px;
+}
+
+#read-letter-button {
+    /* ... styles for the Read Letter button (image) ... */
+    display: none; /* Initially hide */
+    background: none; /* Remove default button background */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add pointer cursor */
+    margin-top: 20px; /* Add spacing */
+}
+
+#read-letter-button img {
+    /* ... styles for the image inside the button ... */
+    width: 50px; /* Adjust image size as needed */
+    height: auto;
+}
+
+.video-container {
+     display: none;
+}
